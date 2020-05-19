@@ -1,4 +1,4 @@
-const selectionSort = (items) => {
+export default (items: number[]): number[] => {
   let smallestIndex;
   for (let divider = 0; divider < items.length - 1; divider++) {
     smallestIndex = divider;
@@ -18,5 +18,3 @@ const selectionSort = (items) => {
 
   return items;
 };
-
-module.exports = selectionSort;

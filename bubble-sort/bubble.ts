@@ -1,5 +1,4 @@
-const bubble = (items, toSkip = 0) => {
-
+const bubbleSort = (items: number[], toSkip: number = 0): number[] => {
     const length = items.length;
 
     let isShifted = false;
@@ -16,10 +15,11 @@ const bubble = (items, toSkip = 0) => {
     }
 
     if (isShifted) {
-        return bubble(items, toSkip + 1);
+        return bubbleSort(items, toSkip + 1);
     }
 
     return items;
 }
 
-module.exports = bubble;
+export default bubbleSort;
+
